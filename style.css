@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Muli:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap");
-
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
 
 * {
@@ -461,12 +460,27 @@ header {
 }
 
 .titulo-textos{
-    padding: 10px;
-    color: brown;
+    padding: 15px;
+    color:black;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
-    border-style: solid;
-    border-width: 5px
+    /* border-style: solid; */
+    border-left: 6px solid red;
+    /* background-color: lightgrey; */
+}
+
+.grupos {
+  display: flex;
+
+}
+.grupos p{
+  font-size: large;
+  font-family: var(--font-action);
+}
+
+
+.texto-grupos{
+  padding: 15px;
 }
 
 .video{
@@ -474,4 +488,43 @@ header {
     padding: 30px;
 }
 
+
+.return{
+  text-align: center;
+}
+
+.return a{
+  font-size: 30px;
+  font-family: var(--font-action);
+  color: #ff4081; 
+}
+
 /* Fim Sessão MundosNumero */
+footer-content{
+  align-items: center;
+}
+
+footer{
+  /* position: absolute; */
+  bottom: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #272727;
+  background-image: url("Imagens/programação.jpg");
+  
+}
+.footer-content{
+  font-size: 30px;
+  font-family: var(--font-action);
+  
+}
+
+.apresentacao{
+  padding: 40px;
+}
+
+.apresentacao p{
+  font-size: 30px;
+  font-family: var(--font-primary);
+}
