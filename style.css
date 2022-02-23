@@ -470,21 +470,40 @@ header {
 }
 
 .grupos {
-  display: flex;
-
-}
-.grupos p{
+  /* display: flex;   */
   font-size: large;
   font-family: var(--font-action);
+
 }
 
+.grupos h3{
+  color: #6a3093;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.grupos img{
+  width: 20rem;
+  height: 20rem;
+} 
+
+.imagem-raiz{
+  align-items: center;
+  border: 25px 25px 4px 35px;
+  padding-top: 30px;
+  padding-left: 600px;
+}
 
 .texto-grupos{
   padding: 15px;
 }
 
+h4{
+  padding: 1.5rem;
+}
+
 .video{
-    display:flex;
+    align-items:flex-start;
     padding: 30px;
 }
 
