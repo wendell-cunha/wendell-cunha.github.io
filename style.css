@@ -321,12 +321,17 @@ header {
   height: 100%;
 }
 
+/* Projetos */
+
 .projetos {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 2rem;
 }
 
+body{
+  background-color: rgb(243, 239, 239);
+}
 .card {
   width: 18rem;
   height: 25rem;
@@ -379,7 +384,7 @@ header {
 
 .card-info p {
   font-family: var(--font-secundary);
-  color: #eee;
+  color:#000;
   font-weight: 400;
   width: 80%;
   margin-bottom: 2rem;
@@ -409,8 +414,6 @@ header {
 
 
 /* Sessão Quem sou eu */
-
-
 
 
 .quem-sou{
