@@ -14,7 +14,7 @@
     <script id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
-
+<title>Mundo dos Números</title>
 <body>
     <!-- Sessão Mundo dos Números -->
 
@@ -28,27 +28,30 @@
                 Quero apresentar conceitos relativamente avançados em matemática mas explicados de maneira simples, para que mais gente se encante com a Rainha das Ciências.
             </p>
         </div>
+    </section>    
 <!-- Texto Grupos -->
-        <div class="grupos">
-            <h2 class="titulo-textos">Teoria de grupos</h2>
-            <p class="texto-grupos">
-                
-                Um grupo é um conjunto \(G\) munido de uma operação \(\circ: G \times G \to G\) tal que:
-                <ul>
-                    <li>i)Para todo \(g,h, k \in G\) temos \(g\circ(h \circ k) = (g \circ h)\circ k\) (Associatividade) </li>
-                    <li>ii)Existe um elemento \(e \in G\) tal que \(g \circ e = e \circ g = g\) para todo \(g \in G\).</li>
-                    <li>iii)Para cada \(g \in G\) existe um elemento \(g^{-1} \in G\) tal que \(g \circ g^{-1} = g^{-1} \circ g = e\)</li>
-                </ul>
 
-                Se, além disso, \(g \circ h = h \circ g\) para todo \(h \in G\) então o grupo é dito abeliano. 
-            </p>
+<section class="textos">
+    <div class="grupos">
+        <h2 class="titulo-textos">Teoria de grupos</h2>
+        <p class="texto-grupos">
+            
+            Um grupo é um conjunto \(G\) munido de uma operação \(\circ: G \times G \to G\) tal que:
+            <ul>
+                <li>i)Para todo \(g,h, k \in G\) temos \(g\circ(h \circ k) = (g \circ h)\circ k\) (Associatividade) </li>
+                <li>ii)Existe um elemento \(e \in G\) tal que \(g \circ e = e \circ g = g\) para todo \(g \in G\).</li>
+                <li>iii)Para cada \(g \in G\) existe um elemento \(g^{-1} \in G\) tal que \(g \circ g^{-1} = g^{-1} \circ g = e\)</li>
+            </ul>
 
-            <h3>Exemplos legais de grupos</h3>
-            <h4>A reta</h4>
- O conjunto dos números reais \(\mathbb{R}\) com a operação de soma é um grupo (abeliano). Este é um exemplo de grupo de ordem infinita, ou seja, tem infinitos elementos.
- Escrevemos, assim \(|G| = \infty\).
- Outro conjunto numérico que é um grupo é o conjunto dos números complexos sem o zero \(\mathbb{C}^{*}\) com a operação de produto. Escrevemos
- \((\mathbb{C}^{*}, .)\) para denotar o grupo munido da operação. 
+            Se, além disso, \(g \circ h = h \circ g\) para todo \(h \in G\) então o grupo é dito abeliano. 
+        </p>
+
+        <h2 class="titulo-textos">Espaços topológicos</h2>
+        <h4>A reta</h4>
+O conjunto dos números reais \(\mathbb{R}\) com a operação de soma é um grupo (abeliano). Este é um exemplo de grupo de ordem infinita, ou seja, tem infinitos elementos.
+Escrevemos, assim \(|G| = \infty\).
+Outro conjunto numérico que é um grupo é o conjunto dos números complexos sem o zero \(\mathbb{C}^{*}\) com a operação de produto. Escrevemos
+\((\mathbb{C}^{*}, .)\) para denotar o grupo munido da operação. 
 
 <h4>As raízes da Unidade</h4>
 Vamos dar agora um exemplo de um grupo finito. Fixe um \(n \in \mathbb{N}\). Uma raiz n-ésima da unidade é um número \(z \in \mathbb{C}\) tal que \(z^n = 0\).
@@ -58,22 +61,49 @@ $$\{e^{\frac{2k\pi i}{n}}| k = 0, \ldots, n-1\}$$. Quer mais ? Os elementos dess
 
 
 <p class="imagem-raiz">
-    <img src="Imagens/geogebra-export.png" alt="raiz">
+<img src="Imagens/geogebra-export.png" alt="raiz">
+
+<iframe width="450" height="300" src="https://www.youtube.com/embed/yTq45s-4d-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+
+</div>
 </p>
+</div>
+</section>
 
- <!-- \begin{equation}
-  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
-  
-  \label{eq:sample}
-\end{equation}  -->
+<section class="textos">
+    <div class="grupos">
+        <h2 class="titulo-textos">Espaços topológicos</h2>
+        <p class="texto-grupos">Espaços topológicos são conjuntos munidos de uma estrutura que chamamos de Topologia. 
+            Basicamente é a estrutura que define o conceito de continuidade e aonde você pode calcular, por exemplo, calcular expressões do tipo
+            \[\lim_{x \to \infty} e^{\cos(x^2)+1}\].
 
-        </div>
-        <div>
-            <iframe width="450" height="300" src="https://www.youtube.com/embed/yTq45s-4d-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+            Para formalizar essa ideia é preciso um pouco de trabalho. Por isso daremos algumas definições relâmpago
+        </p>
+        <p>
+            Uma topologia para um conjunto \(X\) é uma coleção \(\tau\) de subconjuntos de \(X\), chamados de abertos, tais que:
+            <ol>
+                <li>i)\(\emptyset\) e \(X\) \(\in \tau\)</li>
+                <li>ii)Se uma coleção qualquer de conjuntos \(\{U_{\lambda}\}_{\lambda \in L} \in \tau\) para todo \(\lambda \in L\) então \(\bigcup_{\lambda \in \lambda} U_{\lambda} \in \tau\)</li>
+                <li>iii)Se uma coleção finita de conjuntos \(\ \{U_n\}_{n \in M} \in \tau\) para todo \(n \in M\) então \(\bigcap_{n \in M} U_{n} \in \tau\)</li>
 
-        </div>
+            </ol>
+        </p>
+    
 
-    </section>
+    Os conjuntos de \(\tau\) são chamados de Abertos. Um espaço topológico é um conjunto munido de uma topologia
+    <h3>Exemplos legais de Espaços topológicos</h3>
+    <h4>Novamente, a reta</h4>
+    A topologia neste caso é a coleção de todos os intervalos abertos. Um intervalo aberto é um conjunto da forma \((a,b)= \{x \in \mathbb{R}| a \le x \le b\}\). Por exemplo, o intervalo \((0,1)\) (o intervalo mais importante de matemática, diga-se de passagem) é o conjunto de todos os números reais maiores que zero e menores que 1.
+</div>
+
+</section>
+
+
+
+
+
+
+
 
 
     

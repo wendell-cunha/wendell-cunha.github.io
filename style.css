@@ -475,8 +475,19 @@ body{
 .grupos {
   /* display: flex;   */
   font-size: large;
-  font-family: var(--font-action);
+  /* font-family: var(--font-action); */
+  padding: 10px;
 
+}
+
+.grupos p{
+  padding: 10px;
+}
+
+
+
+.textos{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .grupos h3{
@@ -492,11 +503,16 @@ body{
 
 .imagem-raiz{
   align-items: center;
-  border: 25px 25px 4px 35px;
+  border: 30px 25px 4px 35px;
+  border-radius: 5px;
   padding-top: 30px;
-  padding-left: 600px;
+  padding-left: 400px;
 }
 
+.imagem-raiz img{
+  border-radius: 10px;
+  
+}
 .texto-grupos{
   padding: 15px;
 }
