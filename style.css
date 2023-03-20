@@ -147,7 +147,7 @@ header {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  background: #6a3093;
+  background:red;
   background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
   background: linear-gradient(to left, #a044ff, #6a3093);
   padding: 1rem 3rem;
@@ -565,4 +565,12 @@ footer{
 .apresentacao p{
   font-size: 30px;
   font-family: var(--font-primary);
+}
+
+.ensino{
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }
